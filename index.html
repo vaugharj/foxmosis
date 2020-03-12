@@ -1,28 +1,108 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Foxmosis</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-    </head>
+<head>
+    <title>Foxmosis</title>
+    <link type="text/css" rel="stylesheet" href="./style/transitions.css">
+    <link type="text/css" rel="stylesheet" href="./style/gallery.css">
+    <link type="text/css" rel="stylesheet" href="./style/about.css">
+    <link type="text/css" rel="stylesheet" href="./style/home.css">
 
-    <body> 
-            <nav class="navbar">
-                <ul class="navbar-left">
-                    <li class="logo"><a href="#">Lukas Curtis</a></li>
-                </ul>
-                <ul class="navbar-right">
-                    <li class="nav-item"><a href="#">Home</a></li>
-                    <li class="nav-item"><a href="#">About</a></li>
-                    <li class="nav-item"><a href="#">Gallery</a></li>
-                    <li class="nav-item"><a href="#">Contact</a></li>
-                    <li class="nav-item"><a href="#">Blog</a></li>
-                    <li class="nav-toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
-                </ul>
-            </nav>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="./scripts/index.js"></script>
+    <script defer src="./scripts/gallery.js"></script>
+</head>
+<body>
+        
+    <div id="scene1" class="scene hide">
+        <div class="background"></div>
+        <div class = "gallery-nav">
+            <div class = "gallery-title"><h1>Gallery</h1></div>
+            <div class = "gallery-back"><h1>Home</h1></div>
+        </div>
+        <div class="gallery-slide">
+                <a href="javascript:void(0)"><img class="gallery-img" src='./images/SINIS.png'></a>
+                <a href="javascript:void(0)"><img class="gallery-img" src='./images/gopd.png'></a>
+                <a href="javascript:void(0)"><img class="gallery-img" src='./images/SmallBird.jpg'></a>
+                <a href="javascript:void(0)"><img class="gallery-img" src='./images/DAMON.jpg'></a>
+                <a href="javascript:void(0)"><img class="gallery-img" src='https://picsum.photos/200'></a>
+                <a href="javascript:void(0)"><img class="gallery-img" src='https://picsum.photos/200'></a>
+                <a href="javascript:void(0)"><img class="gallery-img" src='https://picsum.photos/200'></a>
+                <a href="javascript:void(0)"><img class="gallery-img" src='https://picsum.photos/200'></a>
+                <a href="javascript:void(0)"><img class="gallery-img" src='https://picsum.photos/200'></a>
+                <a href="javascript:void(0)"><img class="gallery-img" src='https://picsum.photos/200'></a>
+                <a href="javascript:void(0)"><img class="gallery-img" src='https://picsum.photos/200'></a>
+                <a href="javascript:void(0)"><img class="gallery-img" src='https://picsum.photos/200'></a>
+                <a href="javascript:void(0)"><img class="gallery-img" src='https://picsum.photos/200'></a>
+                <a href="javascript:void(0)"><img class="gallery-img" src='https://picsum.photos/200'></a>
+                <a href="javascript:void(0)"><img class="gallery-img" src='https://picsum.photos/200'></a>
+                <a href="javascript:void(0)"><img class="gallery-img" src='https://picsum.photos/200'></a>
+                <a href="javascript:void(0)"><img class="gallery-img" src='https://picsum.photos/200'></a>
+                <a href="javascript:void(0)"><img class="gallery-img" src='https://picsum.photos/200'></a>
+                <a href="javascript:void(0)"><img class="gallery-img" src='https://picsum.photos/200'></a>
+                <a href="javascript:void(0)"><img class="gallery-img" src='https://picsum.photos/200'></a>
+                <a href="javascript:void(0)"><img class="gallery-img" src='https://picsum.photos/200'></a>
+                <a href="javascript:void(0)"><img class="gallery-img" src='https://picsum.photos/200'></a>
+                <a href="javascript:void(0)"><img class="gallery-img" src='https://picsum.photos/200'></a>
+                <a href="javascript:void(0)"><img class="gallery-img" src='https://picsum.photos/200'></a>
+                <a href="javascript:void(0)"><img class="gallery-img" src='https://picsum.photos/200'></a>
+                <a href="javascript:void(0)"><img class="gallery-img" src='https://picsum.photos/200'></a>
+                <a href="javascript:void(0)"><img class="gallery-img" src='https://picsum.photos/200'></a>
+                <a href="javascript:void(0)"><img class="gallery-img" src='https://picsum.photos/200'></a>
+                <a href="javascript:void(0)"><img class="gallery-img" src='https://picsum.photos/200'></a>
+                <a href="javascript:void(0)"><img class="gallery-img" src='https://picsum.photos/200'></a>
+                <a href="javascript:void(0)"><img class="gallery-img" src='https://picsum.photos/200'></a>
+                <a href="javascript:void(0)"><img class="gallery-img" src='https://picsum.photos/200'></a>
+                <a href="javascript:void(0)"><img class="gallery-img" src='https://picsum.photos/200'></a>
+        </div>         
+        
+    </div>
 
-            
-                <div class="splash-text">Hi
-                    </div>
-            
-            </body>
+    <div class="img-display hide">
+        <i id="display-close" class="fa fa-times fa-2x"></i>
+        <img id="display-img"></img>
+    </div>  
+
+    
+    
+
+    <div id="scene2" class="scene hide">
+        <div class="home-background">
+
+        </div>
+        <div id="lukas-logo">
+    
+        </div> 
+        <div id="gallery-menu-btn">
+            Gallery
+        </div>
+        <div id="about-menu-btn">
+            About Me
+        </div>
+        <div id="blog-menu-btn">
+            Blog
+        </div>
+    </div>
+
+    <div id="scene3" class="scene">
+        <div id = "about-info-container">
+            <h1>About me</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam similique quos voluptatibus reprehenderit quas architecto, natus velit consequuntur porro facilis blanditiis sed eos beatae id eligendi qui autem placeat. Possimus.Voluptatem sit quidem dignissimos suscipit velit harum dolorum, excepturi possimus eligendi labore sequi ipsam facere numquam aut unde sapiente quos modi ex facilis. Eos, vitae animi ut ipsa quas beatae.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam similique quos voluptatibus reprehenderit quas architecto, natus velit consequuntur porro facilis blanditiis sed eos beatae id eligendi qui autem placeat. Possimus.Voluptatem sit quidem dignissimos suscipit velit harum dolorum, excepturi possimus eligendi labore sequi ipsam facere numquam aut unde sapiente quos modi ex facilis. Eos, vitae animi ut ipsa quas beatae.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam similique quos voluptatibus reprehenderit quas architecto, natus velit consequuntur porro facilis blanditiis sed eos beatae id eligendi qui autem placeat. Possimus.Voluptatem sit quidem dignissimos suscipit velit harum dolorum, excepturi possimus eligendi labore sequi ipsam facere numquam aut unde sapiente quos modi ex facilis. Eos, vitae animi ut ipsa quas beatae.</p>
+            <div id = "about-contact-bar">
+                <p>Contact:</p>
+                <a href="https://www.twitter.com"><i class="fa fa-twitter fa-2x"></i></a>
+                <a href="https://www.twitter.com"><i class="fa fa-instagram fa-2x"></i></a>
+                <a href="https://www.twitter.com"><i class="fa fa-facebook-official fa-2x"></i></a>
+            </div>
+        </div>
+        <div id="menu-about-btn">
+            Home
+        </div>
+    </div>
+
+    <div id="door" class="scene"></div>
+
+
+</body>
 </html>

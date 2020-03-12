@@ -1,0 +1,94 @@
+#lukas-logo{
+    top: 40%;
+    right: 1.5%;
+    position: absolute;
+    width: 30vw;
+    min-width: 200px;
+    height: 15vw;
+    min-height: 100px;
+    background-image: url('../images/lukas.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#lukas-logo:hover{
+    background-image: url('../images/foxmosis.png');
+    width: 38vw;
+    height: 17vw;
+    background-size: 34vw 17vw;
+    top: 39%;
+    right: -1%;
+}
+
+/* .home-background{
+    z-index: -1;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    background-image: url('https://www.inmatrix.com/skins/background/Default_Nav[1920x1080].png');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    min-height:
+} */
+
+#gallery-menu-btn{
+    position: absolute;
+    top: 8%;
+    left: 1%;
+    width: 20vw;
+    height: 6vw;
+    background-size: 20vw 10vw;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-size: 7vw;
+    cursor: pointer;
+    text-shadow: 1px 1px 5px black;
+}
+
+#gallery-menu-btn:hover{
+    color: rgba(200, 200, 200, 1);
+}
+
+#about-menu-btn{
+    position: absolute;
+    bottom: 30%;
+    left: 1%;
+    width: 25vw;
+    height: 0vw;
+    background-size: 20vw 10vw;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-size: 7vw;
+    cursor: pointer;
+    white-space: nowrap;
+    margin-bottom: 0;
+    transform: translateY(30px);
+    text-shadow: 1px 1px 5px black;
+}
+
+#about-menu-btn:hover{
+    color: rgba(200, 200, 200, 1);
+}
+
+#blog-menu-btn{
+    position: absolute;
+    top: 38%;
+    left: 1%;
+    width: 25vw;
+    height: 6vw;
+    background-size: 20vw 10vw;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-size: 7vw;
+    cursor: pointer;
+    white-space: nowrap;
+    margin-bottom: 0;
+    transform: translateY(30px);
+    text-shadow: 1px 1px 5px black;
+}
+
+#blog-menu-btn:hover{
+    color: rgba(200, 200, 200, 1);
+}

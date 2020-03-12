@@ -1,0 +1,206 @@
+.gallery-slide{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    align-items: stretch;
+    margin: 0 auto 30px auto;
+    width: 75vw;
+    background-color: rgba(152, 103, 216, 0.75);
+    border-radius: 20px;
+    border: 2px solid black;
+    box-shadow: 0px 0px 15px 5px black;
+
+    background: repeating-linear-gradient(
+        15deg,
+        rgba(54, 4, 121, 0.75),
+        rgba(152, 103, 216, 0.75) 10px,
+        rgba(54, 4, 121, 0.75) 200px,
+        rgba(54, 4, 121, 0.75) 40px
+      );
+
+
+}
+
+.gallery-slide a{
+    width: 20%;
+    margin: 2% 2%;
+    background-color: rgba(0, 0, 0, .75);
+    border-radius: 15px;    
+}
+
+.gallery-slide a img{
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 15px;
+    opacity: .8;
+    transition: opacity .5s;
+    box-shadow: 0px 0px 10px 4px black;
+}
+
+.gallery-slide a img:hover{
+    opacity: 1;
+}
+
+.background{
+    z-index: -1;
+    position: absolute;
+    width: 120%;
+    height: 100%;
+    top: 0;
+    background-image: url('https://images.unsplash.com/photo-1558481795-7f0a7c906f5e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1073&q=80');
+    background-size: 110vw;
+    background-attachment: fixed;
+}
+
+
+
+.gallery-nav{
+    width: 72.5%;
+    margin: 30px auto 30px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: nowrap;
+    height: 80px;
+    
+}
+
+.gallery-title{
+    height: 80px;
+    width: 75%;
+}
+
+.gallery-back{
+    height: 40px;
+    width: 20%;
+    cursor: pointer;
+}
+
+
+
+.gallery-title > h1  {
+    font: bold 80px arial, sans-serif;
+    /* background-color: inherit; */
+    /* background-image: inherit; */
+    text-shadow: -2px -2px 2px rgb(255, 255, 255), 3px 3px 3px #000;
+	color: #c7c7c7;
+    opacity: 0.95;
+    margin-bottom: 20px;
+    transition: opacity .3s;
+    cursor: default;
+    line-height: -10px;
+  }
+
+  .gallery-back > h1{
+    font: bold 40px arial, sans-serif;
+    /* background-color: inherit; */
+    /* background-image: inherit; */
+    text-shadow: -2px -2px 2px rgb(255, 255, 255), 3px 3px 3px #000;
+	color: #c7c7c7;
+    opacity: 0.95;
+    margin-bottom: 20px;
+    transition: opacity .3s;
+    text-align: right;
+    line-height: 20px;
+    width: 90px;
+  }
+
+
+
+  .gallery-back > h1:hover{
+    font: bold 40px arial, sans-serif;
+    /* background-color: inherit; */
+    /* background-image: inherit; */
+    text-shadow: -2px -2px 2px rgb(255, 255, 255), 3px 3px 3px #000;
+	color: #3f3f3f;
+    opacity: 0.95;
+    margin-bottom: 20px;
+    transition: opacity .3s;
+    line-height: 20px;
+  }
+
+  .img-display{
+      position: fixed;
+      top: 9vh;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: white;
+      width: 60vw;
+      height: 60vw;
+      max-width: 80vh;
+      max-height: 80vh;
+      min-height: 400px;
+      min-width: 400px;
+
+      border-radius: 50px;
+      background-color: rgba(0, 0, 0, .8);
+      border: 1px solid white;
+      z-index: 5;
+  }
+
+  @keyframes display-show{
+      from {opacity: 0}
+      to {opacity: 1}
+  }
+
+  @keyframes display-hide{
+    from {opacity: 1}
+    to {opacity: 0}
+}
+
+.dark{
+    filter: brightness(50%);
+}
+
+  .display-hide{
+    animation: display-hide .25s ease-out both;
+}
+
+.display-show{
+    animation: display-show .25s ease-out both;
+}
+
+.fa-times{
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      color: rgba(255, 0, 0, 0.5);
+      cursor: pointer;
+      transition: .2s color;
+      z-index: 5;
+      text-shadow: 0px 2px 5px black;
+}
+
+.fa-home{
+      color: gray;
+      cursor: pointer;
+      transition: .2s color;
+      z-index: 5;
+      text-shadow: 0px 2px 5px black;
+      width: 100px;
+}
+
+  .fa-times:hover{
+      color: white;
+  }
+
+  #display-img{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto auto;
+      width: 96%;
+      src: none;
+      background-color: white;
+      border: 1px solid rgba(100, 100, 100, .5);
+      border-radius: 40px;
+  }
+
+
+
