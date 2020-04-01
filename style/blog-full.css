@@ -1,0 +1,126 @@
+#blog-full{
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    padding-bottom: 25px;
+    box-sizing: border-box;
+    background-image: linear-gradient(-160deg, rgba(50, 50, 200, .5), transparent, rgba(187, 202, 52, 0.5)), url('https://images.unsplash.com/photo-1520758594221-872948699332?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
+
+}
+
+#blog-full-container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: flex-start;
+    align-items: stretch;
+    background-color: rgba(50, 50, 50, .65);
+    border: 1px solid rgba(255, 255, 255, .5);
+    border-radius: 30px;
+    padding-bottom: 60px;
+    width: 80%;
+    margin: 10px auto 0 auto;
+}
+
+#blog-full-return{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    align-self: flex-start;
+    width: 50px;
+    padding: 20px;
+    cursor: pointer;
+    border-bottom: 2px solid rgba(255, 255, 255, .5);
+    border-right: 2px solid rgba(255, 255, 255, .5);
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 30px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+
+
+#blog-full-return > a > i{
+    color: white;
+    text-align: center;
+    font-size: 2em;
+}
+
+#blog-full-return:hover > a > i, #blog-full-return:active > a > i{
+    color: black;
+}
+
+#blog-full-return:hover, #blog-full-return:active{
+    background-color: rgba(255, 255, 255, .5)
+}
+
+
+#blog-full-title{
+    color: white;
+    font-size: 2em;
+    width: 75%;
+    text-align: center;
+    margin: 20px auto 0 auto;
+    line-height: 1;
+}
+
+#blog-full-date{
+    color: rgba(200, 200, 200, 1);
+    font-style: italic;
+    text-align: center;
+}
+
+#blog-full-body{
+    position: relative;
+    color: white;
+    margin: 10px 3% 0 3%;
+    padding-bottom: 20px;
+}
+
+#blog-full-body::after{
+    content: "";
+    background-color:rgba(255, 255, 255, .5);
+    height: 1px;
+    position: absolute;
+    top: calc(100% + 10px);
+    width: 100%;
+
+}
+
+#blog-full-body > p {
+    margin-top: 20px;
+}
+
+form{
+    color: white;
+    width: 50%;
+    margin: 20px 35% 0 15%;
+}
+
+#comment-box{
+    width: 100%;
+    height: 200px;
+    margin: 0 auto 10px auto;
+}
+
+label, textarea, input{
+    display: block;
+}
+
+textarea, input{
+    margin-bottom: 10px;
+}
+
+label{
+    margin-bottom: 0px;
+}
+
+#form-header{
+    color: white;
+    font-size: 2em;
+    margin-bottom: 15px;
+}

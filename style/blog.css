@@ -1,0 +1,188 @@
+#blog{
+    background-image: url('https://images.unsplash.com/photo-1575255597220-a2c96f34c906?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    padding-bottom: 25px;
+    background-image: linear-gradient(-160deg, rgba(50, 50, 200, .5), transparent, rgba(187, 202, 52, 0.5)), url('https://images.unsplash.com/photo-1520758594221-872948699332?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
+    background-attachment: fixed;
+}
+
+#blog-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 90%;
+    min-height: 90%;
+    margin: 30px auto 0 auto;
+    text-shadow: 1px 1px 5px black;
+}
+
+#blog-post-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    width: 64%;
+    min-height: 300px;
+    background: inherit;
+    background-color: rgba(50, 50, 50, .75);
+    border: 1px solid rgba(255, 255, 255, .5);
+    border-radius: 30px;
+}
+
+
+#blog-post-header{
+    cursor: default;
+    margin-top: 10px;
+    color: white;
+    text-align: center;
+    font-size: 2.5em;
+    text-shadow: 3px 3px 5px black;
+}
+
+#blog-selector-header{
+    cursor: default;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+    text-shadow: 3px 3px 5px black;
+}
+
+
+#blog-post-header::after{
+    content: "";
+    position: absolute;
+    top: 55px;
+    height: 1px;
+    width: 75%;
+    left: 12.5%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+}
+#blog-selector-header::after{
+    content: "";
+    position: absolute;
+    top: 40px;
+    height: 1px;
+    width: 75%;
+    left: 12.5%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+}
+
+.blog-post-preview::after{
+    content: "";
+    position: absolute;
+    top: calc(100% + 20px);
+    height: 1px;
+    width: 95%;
+    left: 2.5%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+}
+
+#blog-selector-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    width: 33%;
+    min-height: 300px;
+    background-color: rgba(50, 50, 50, .75);
+    border: 1px solid rgba(255, 255, 255, .5);
+    border-radius: 30px;
+}
+
+.blog-post-preview{
+    position: relative;
+    color: white;
+    margin: 20px;
+    
+}
+
+.blog-post-preview-title{
+    font-size: 1.8em;
+    line-height: 1
+}
+
+.blog-post-preview-date{
+    font-style: italic;
+    color: rgba(200, 200, 200, 1);
+    margin-bottom: 10px;
+}
+
+.blog-post-preview > p{
+    margin-top: 10px;
+}
+
+.blog-post-preview-link{
+    text-align: center;
+    text-decoration: underline;
+    cursor: pointer;
+    width: 150px;
+    margin: 30px auto 10px auto;
+    font-family: Lucida, sans-serif;
+    font-size: 1.4em;
+}
+
+#blog-list{
+    margin-top: 10px;
+    color: white;
+    list-style: none;
+}
+
+#blog-list > p{
+    margin: 6px 10px 0px 10px;
+    cursor: pointer;
+    text-align: left;
+    font-family: Lucida, sans-serif;
+
+}
+
+.blog-full-btn:hover, .blog-full-btn:active{
+    color: #aaaaaa;
+}
+
+#blog-list > .blog-full-btn{
+    position: relative;
+    margin-bottom: 15px;
+}
+
+#blog-list > .blog-full-btn::after{
+    content: "";
+    position: absolute;
+    top: calc(100% + 7px);
+    height: 1px;
+    width: 40%;
+    left: 0px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+}
+
+#blog-list > .blog-full-btn:last-of-type:after{
+    height: 0px;
+}
+
+@media only screen and (max-width: 600px){
+    #blog-container{
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+    }
+
+    #blog-post-container{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    #blog-selector-container{
+        width: 100%;
+    }
+}

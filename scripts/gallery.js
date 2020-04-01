@@ -7,12 +7,12 @@ const display = document.getElementsByClassName('img-display')[0];
 let displayShowing = false;
 
 
-window.addEventListener('scroll', () => {
-    console.log('event triggered');
-    const top = window.pageYOffset;
-    const newPos = top * -.05;
-    background.setAttribute('style', 'background-position-y:' + newPos + 'px');
-});
+// window.addEventListener('scroll', () => {
+//     console.log('event triggered');
+//     const top = window.pageYOffset;
+//     const newPos = top * -.05;
+//     background.setAttribute('style', 'background-position-y:' + newPos + 'px');
+// });
 
 let showImage = function(src){
     return function(){
@@ -22,8 +22,7 @@ let showImage = function(src){
             displayImage.setAttribute('src', src);
             display.classList.remove('display-hide');
             display.classList.add('display-show');
-            scene1.classList.add('dark');
-            galleryBack.setAttribute('style', 'cursor: default');
+            gallery.classList.add('dark');
             for(var i = 0; i < images.length; i++){
                 if(images[i] !== displayImage){
                     images[i].setAttribute('style', 'cursor: default; opacity: .75;');
@@ -41,11 +40,10 @@ for(var i = 0; i < images.length; i++){
 displayClose.addEventListener('click', function(){
     display.classList.remove('display-show');
     display.classList.add('display-hide');
-    scene1.classList.remove('dark');
+    gallery.classList.remove('dark');
     setTimeout( () => {
         display.classList.add('hide');
         displayShowing = false;
-        galleryBack.setAttribute('style', 'cursor: pointer');
         for(var i = 0; i < images.length; i++){
             if(images[i] !== displayImage){
                 images[i].setAttribute('style', 'cursor: pointer');

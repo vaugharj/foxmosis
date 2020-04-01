@@ -1,108 +1,312 @@
 <!DOCTYPE html>
-<html>
 <head>
-    <title>Foxmosis</title>
-    <link type="text/css" rel="stylesheet" href="./style/transitions.css">
+    <link type="text/css" rel="stylesheet" href="./style/index.css">
+    <link type="text/css" rel="stylesheet" href="./style/home.css">
     <link type="text/css" rel="stylesheet" href="./style/gallery.css">
     <link type="text/css" rel="stylesheet" href="./style/about.css">
-    <link type="text/css" rel="stylesheet" href="./style/home.css">
-
+    <link type="text/css" rel="stylesheet" href="./style/transition.css">
+    <link type="text/css" rel="stylesheet" href="./style/blog.css">
+    <link type="text/css" rel="stylesheet" href="./style/blog-full.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script defer src="./scripts/index.js"></script>
+
+
+    <script defer src="./scripts/transition.js"></script>
+    <script defer src="./scripts/nav.js"></script>
     <script defer src="./scripts/gallery.js"></script>
+    <script defer src="./scripts/about.js"></script>
+    <script defer src="./scripts/blog.js"></script>
+
 </head>
+
 <body>
-        
-    <div id="scene1" class="scene hide">
-        <div class="background"></div>
-        <div class = "gallery-nav">
-            <div class = "gallery-title"><h1>Gallery</h1></div>
-            <div class = "gallery-back"><h1>Home</h1></div>
+    <div id="home" class="">
+        <div id="home-fill">
+        <div id="home-container">
+            <img id="home-portrait-phone" src="./images/foxmosis.png">
+            <div class="home-box about-btn">
+                <div class="home-box-image">
+                    <div class="home-box-portrait"></div>
+                </div>
+                <div class="home-box-description">About me</div>
+            </div>
+            <div class="home-box gallery-btn">
+                <div class="home-box-image"></div>
+                <div class="home-box-description">Gallery</div>
+            </div>
+            <div class="home-box blog-btn">
+                <div class="home-box-image"></div>
+                <div class="home-box-description">Blog</div>
+            </div>
+            
         </div>
-        <div class="gallery-slide">
-                <a href="javascript:void(0)"><img class="gallery-img" src='./images/SINIS.png'></a>
-                <a href="javascript:void(0)"><img class="gallery-img" src='./images/gopd.png'></a>
-                <a href="javascript:void(0)"><img class="gallery-img" src='./images/SmallBird.jpg'></a>
-                <a href="javascript:void(0)"><img class="gallery-img" src='./images/DAMON.jpg'></a>
-                <a href="javascript:void(0)"><img class="gallery-img" src='https://picsum.photos/200'></a>
-                <a href="javascript:void(0)"><img class="gallery-img" src='https://picsum.photos/200'></a>
-                <a href="javascript:void(0)"><img class="gallery-img" src='https://picsum.photos/200'></a>
-                <a href="javascript:void(0)"><img class="gallery-img" src='https://picsum.photos/200'></a>
-                <a href="javascript:void(0)"><img class="gallery-img" src='https://picsum.photos/200'></a>
-                <a href="javascript:void(0)"><img class="gallery-img" src='https://picsum.photos/200'></a>
-                <a href="javascript:void(0)"><img class="gallery-img" src='https://picsum.photos/200'></a>
-                <a href="javascript:void(0)"><img class="gallery-img" src='https://picsum.photos/200'></a>
-                <a href="javascript:void(0)"><img class="gallery-img" src='https://picsum.photos/200'></a>
-                <a href="javascript:void(0)"><img class="gallery-img" src='https://picsum.photos/200'></a>
-                <a href="javascript:void(0)"><img class="gallery-img" src='https://picsum.photos/200'></a>
-                <a href="javascript:void(0)"><img class="gallery-img" src='https://picsum.photos/200'></a>
-                <a href="javascript:void(0)"><img class="gallery-img" src='https://picsum.photos/200'></a>
-                <a href="javascript:void(0)"><img class="gallery-img" src='https://picsum.photos/200'></a>
-                <a href="javascript:void(0)"><img class="gallery-img" src='https://picsum.photos/200'></a>
-                <a href="javascript:void(0)"><img class="gallery-img" src='https://picsum.photos/200'></a>
-                <a href="javascript:void(0)"><img class="gallery-img" src='https://picsum.photos/200'></a>
-                <a href="javascript:void(0)"><img class="gallery-img" src='https://picsum.photos/200'></a>
-                <a href="javascript:void(0)"><img class="gallery-img" src='https://picsum.photos/200'></a>
-                <a href="javascript:void(0)"><img class="gallery-img" src='https://picsum.photos/200'></a>
-                <a href="javascript:void(0)"><img class="gallery-img" src='https://picsum.photos/200'></a>
-                <a href="javascript:void(0)"><img class="gallery-img" src='https://picsum.photos/200'></a>
-                <a href="javascript:void(0)"><img class="gallery-img" src='https://picsum.photos/200'></a>
-                <a href="javascript:void(0)"><img class="gallery-img" src='https://picsum.photos/200'></a>
-                <a href="javascript:void(0)"><img class="gallery-img" src='https://picsum.photos/200'></a>
-                <a href="javascript:void(0)"><img class="gallery-img" src='https://picsum.photos/200'></a>
-                <a href="javascript:void(0)"><img class="gallery-img" src='https://picsum.photos/200'></a>
-                <a href="javascript:void(0)"><img class="gallery-img" src='https://picsum.photos/200'></a>
-                <a href="javascript:void(0)"><img class="gallery-img" src='https://picsum.photos/200'></a>
-        </div>         
-        
+        <img id="home-portrait" src="./images/foxmosis.png">
+        </div>
     </div>
 
+    <div id="gallery" class="hide">
+        <div class="nav">
+            <div class="nav-logo">
+                Lukas Curtis
+            </div>
+            <div class="nav-right">
+                <div class="nav-btn home-btn">
+                    Home
+                </div>
+                <div class="nav-btn gallery-btn">
+                    Gallery
+                </div>
+                <div class="nav-btn blog-btn">
+                    Blog
+                </div>
+                <div class="nav-btn about-btn">
+                    About
+                </div>
+                
+                <div class="nav-dropdown">
+                    <a href='#'><i class="fa fa-bars dropdown-icon"></i></a>
+                    <ol class="nav-dropdown-content">
+                        <li class="nav-dropdown-btn home-btn">Home</li>
+                        <li class="nav-dropdown-btn about-btn">About</li>
+                        <li class="nav-dropdown-btn gallery-btn">Gallery</li>
+                        <li class="nav-dropdown-btn blog-btn">Blog</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div id="gallery-slide">
+                <div class="img-container"><img class="gallery-img" src='./images/SINIS.png'></div>
+                <div class="img-container"><img class="gallery-img" src='./images/smallbird.jpg'></div>
+                <div class="img-container"><img class="gallery-img" src='./images/SINIS.png'></div>
+                <div class="img-container"><img class="gallery-img" src='./images/SINIS.png'></div>
+                <div class="img-container"><img class="gallery-img" src='./images/SINIS.png'></div>
+                <div class="img-container"><img class="gallery-img" src='./images/SINIS.png'></div>
+                <div class="img-container"><img class="gallery-img" src='./images/SINIS.png'></div>
+                <div class="img-container"><img class="gallery-img" src='./images/SINIS.png'></div>
+                <div class="img-container"><img class="gallery-img" src='./images/SINIS.png'></div>
+                <div class="img-container"><img class="gallery-img" src='./images/SINIS.png'></div>
+                <div class="img-container"><img class="gallery-img" src='./images/SINIS.png'></div>
+                <div class="img-container"><img class="gallery-img" src='./images/SINIS.png'></div>
+                <div class="img-container"><img class="gallery-img" src='./images/SINIS.png'></div>
+                <div class="img-container"><img class="gallery-img" src='./images/SINIS.png'></div>
+                <div class="img-container"><img class="gallery-img" src='./images/SINIS.png'></div>
+                <div class="img-container"><img class="gallery-img" src='./images/SINIS.png'></div>
+        </div>
+    </div>
     <div class="img-display hide">
         <i id="display-close" class="fa fa-times fa-2x"></i>
         <img id="display-img"></img>
     </div>  
 
-    
-    
 
-    <div id="scene2" class="scene hide">
-        <div class="home-background">
 
-        </div>
-        <div id="lukas-logo">
-    
-        </div> 
-        <div id="gallery-menu-btn">
-            Gallery
-        </div>
-        <div id="about-menu-btn">
-            About Me
-        </div>
-        <div id="blog-menu-btn">
-            Blog
-        </div>
-    </div>
 
-    <div id="scene3" class="scene">
-        <div id = "about-info-container">
-            <h1>About me</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam similique quos voluptatibus reprehenderit quas architecto, natus velit consequuntur porro facilis blanditiis sed eos beatae id eligendi qui autem placeat. Possimus.Voluptatem sit quidem dignissimos suscipit velit harum dolorum, excepturi possimus eligendi labore sequi ipsam facere numquam aut unde sapiente quos modi ex facilis. Eos, vitae animi ut ipsa quas beatae.</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam similique quos voluptatibus reprehenderit quas architecto, natus velit consequuntur porro facilis blanditiis sed eos beatae id eligendi qui autem placeat. Possimus.Voluptatem sit quidem dignissimos suscipit velit harum dolorum, excepturi possimus eligendi labore sequi ipsam facere numquam aut unde sapiente quos modi ex facilis. Eos, vitae animi ut ipsa quas beatae.</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam similique quos voluptatibus reprehenderit quas architecto, natus velit consequuntur porro facilis blanditiis sed eos beatae id eligendi qui autem placeat. Possimus.Voluptatem sit quidem dignissimos suscipit velit harum dolorum, excepturi possimus eligendi labore sequi ipsam facere numquam aut unde sapiente quos modi ex facilis. Eos, vitae animi ut ipsa quas beatae.</p>
-            <div id = "about-contact-bar">
-                <p>Contact:</p>
-                <a href="https://www.twitter.com"><i class="fa fa-twitter fa-2x"></i></a>
-                <a href="https://www.twitter.com"><i class="fa fa-instagram fa-2x"></i></a>
-                <a href="https://www.twitter.com"><i class="fa fa-facebook-official fa-2x"></i></a>
+    <div id="about" class="hide">
+        <div id="about-extend">
+        <div class="nav">
+            <div class="nav-logo">
+                Lukas Curtis
+            </div>
+            <div class="nav-right">
+                <div class="nav-dropdown">
+                    <a href='#'><i class="fa fa-bars dropdown-icon"></i></a>
+                    <ol class="nav-dropdown-content">
+                        <li class="nav-dropdown-btn home-btn">Home</li>
+                        <li class="nav-dropdown-btn about-btn">About</li>
+                        <li class="nav-dropdown-btn gallery-btn">Gallery</li>
+                        <li class="nav-dropdown-btn blog-btn">Blog</li>
+                    </ol>
+                </div>
+                <div class="nav-btn home-btn">
+                    Home
+                </div>
+                <div class="nav-btn gallery-btn">
+                    Gallery
+                </div>
+                <div class="nav-btn blog-btn">
+                    Blog
+                </div>
+                <div class="nav-btn about-btn">
+                    About
+                </div>
+                
+                
             </div>
         </div>
-        <div id="menu-about-btn">
-            Home
+
+        <img id="about-portrait-img" src="./images/LUKAS1.png">
+
+        <div id="about-content-container">
+            <div id="about-portrait">
+            </div>
+            <div id="about-info">
+                <div id="about-info-header">
+                    About me
+                </div>
+                <div id="about-info-text">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis accusamus totam officia sapiente animi doloribus rem in excepturi, labore nesciunt vel? Exercitationem, culpa quas. Aliquam voluptatum quisquam a commodi deserunt.</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis accusamus totam officia sapiente animi doloribus rem in excepturi, labore nesciunt vel? Exercitationem, culpa quas. Aliquam voluptatum quisquam a commodi deserunt.</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis accusamus totam officia sapiente animi doloribus rem in excepturi, labore nesciunt vel? Exercitationem, culpa quas. Aliquam voluptatum quisquam a commodi deserunt.</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis accusamus totam officia sapiente animi doloribus rem in excepturi, labore nesciunt vel? Exercitationem, culpa quas. Aliquam voluptatum quisquam a commodi deserunt.</p>
+                </div>
+                <div id ="about-info-contact">
+                    <p>Contact:</p>
+                    <a href="https://www.twitter.com"><i class="fa fa-twitter fa-2x"></i></a>
+                    <a href="https://www.twitter.com"><i class="fa fa-instagram fa-2x"></i></a>
+                    <a href="https://www.twitter.com"><i class="fa fa-facebook-official fa-2x"></i></a>
+                </div>
+                <div id="about-info-email">Email: foxmosis17@gmail.com</div>
+            </div>
+
+            
+        </div>
         </div>
     </div>
 
-    <div id="door" class="scene"></div>
+    <div id="blog" class="hide">
+        <div class="nav">
+            <div class="nav-logo">
+                Lukas Curtis
+            </div>
+            <div class="nav-right">
+                <div class="nav-btn home-btn">
+                    Home
+                </div>
+                <div class="nav-btn gallery-btn">
+                    Gallery
+                </div>
+                <div class="nav-btn blog-btn">
+                    Blog
+                </div>
+                <div class="nav-btn about-btn">
+                    About
+                </div>
+                
+                <div class="nav-dropdown">
+                    <a href='#'><i class="fa fa-bars dropdown-icon"></i></a>
+                    <ol class="nav-dropdown-content">
+                        <li class="nav-dropdown-btn home-btn">Home</li>
+                        <li class="nav-dropdown-btn about-btn">About</li>
+                        <li class="nav-dropdown-btn gallery-btn">Gallery</li>
+                        <li class="nav-dropdown-btn blog-btn">Blog</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
 
+        <div id="blog-container">
+            <div id="blog-post-container">
+                <div id="blog-post-header">
+                    Recent Posts
+                </div>
+                <div class="blog-post-preview">
+                    <div class="blog-post-preview-title">Title 1</div>
+                    <div class="blog-post-preview-date">
+                        October 7, 1993
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et explicabo labore doloremque quis magni ipsum. Quia pariatur ullam officiis voluptatem, quo voluptate. Tempore odio eaque sunt quis illum. Consequatur, at.
+                    Commodi blanditiis alias voluptas dolor numquam nulla impedit et nemo dignissimos unde hic voluptate quasi molestiae magnam molestias modi rerum est, mollitia ea aliquam voluptatem consectetur totam dolore accusamus? Similique!
+                    Sapiente quis voluptate illo sunt, laudantium deserunt perspiciatis minima, aperiam modi facere enim illum, dolores molestiae voluptatibus aspernatur quo consequatur odit? Accusamus, et earum nemo velit omnis similique est facere!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et explicabo labore doloremque quis magni ipsum. Quia pariatur ullam officiis voluptatem, quo voluptate. Tempore odio eaque sunt quis illum. Consequatur, at.
+                        Commodi (...)</p>
+                       
+                    <div class="blog-post-preview-link blog-full-btn">See more.</div>
+                </div>
+
+                <div class="blog-post-preview">
+                    <div class="blog-post-preview-title">Title 2 this is a longer title to see if longer titles work there we go more more more more more more more more more more more more more</div>
+                    <div class="blog-post-preview-date">
+                        October 7, 1993
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et explicabo labore doloremque quis magni ipsum. Quia pariatur ullam officiis voluptatem, quo voluptate. Tempore odio eaque sunt quis illum. Consequatur, at.
+                    Commodi blanditiis alias voluptas dolor numquam nulla impedit et nemo dignissimos unde hic voluptate quasi molestiae magnam molestias modi rerum est, mollitia ea aliquam voluptatem consectetur totam dolore accusamus? Similique!
+                    Sapiente quis voluptate illo sunt, laudantium deserunt perspiciatis minima, aperiam modi facere enim illum, dolores molestiae voluptatibus aspernatur quo consequatur odit? Accusamus, et earum nemo velit omnis similique est facere!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et explicabo labore doloremque quis magni ipsum. Quia pariatur ullam officiis voluptatem, quo voluptate. Tempore odio eaque sunt quis illum. Consequatur, at.
+                        Commodi (...)</p>
+                       
+                    <div class="blog-post-preview-link blog-full-btn">See more.</div>
+                </div>
+
+            </div>
+        
+            <div id="blog-selector-container">
+                <div id="blog-selector-header">
+                    All Posts
+                </div>
+                <div id="blog-list">
+                    <p class="blog-full-btn">Title 1</p>
+                    <p class="blog-full-btn">Title 2 this is a longer title to see if longer titles work there we go more more more more more more more more more more more more more</p>
+                    <p class="blog-full-btn">Title 3</p>
+                    <p class="blog-full-btn">Title 4</p>
+                    <p class="blog-full-btn">Title 5</p>
+                    <p class="blog-full-btn">Title 6</p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="blog-full" class="hide">
+        <div class="nav">
+            <div class="nav-logo">
+                Lukas Curtis
+            </div>
+            <div class="nav-right">
+                <div class="nav-btn home-btn">
+                    Home
+                </div>
+                <div class="nav-btn gallery-btn">
+                    Gallery
+                </div>
+                <div class="nav-btn blog-btn">
+                    Blog
+                </div>
+                <div class="nav-btn about-btn">
+                    About
+                </div>
+                
+                <div class="nav-dropdown">
+                    <a href='#'><i class="fa fa-bars dropdown-icon"></i></a>
+                    <ol class="nav-dropdown-content">
+                        <li class="nav-dropdown-btn home-btn">Home</li>
+                        <li class="nav-dropdown-btn about-btn">About</li>
+                        <li class="nav-dropdown-btn gallery-btn">Gallery</li>
+                        <li class="nav-dropdown-btn blog-btn">Blog</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div id="blog-full-container">
+            <div id="blog-full-return" class="blog-btn">
+                <a href="#"><i class="fa fa-angle-left"></i></a>
+            </div>
+            <div id="blog-full-title">
+
+            </div>
+            <div id="blog-full-date">
+
+            </div>
+            <div id="blog-full-body"></div>
+
+            <form>
+                <h1 id="form-header">Leave a reply:</h1>
+                <label for="comment">Comment:</label>
+                <textarea id="comment-box" name="comment"></textarea>
+                <label for="name">Name:</label>
+                <input type="text" id="name-box" name="name">
+                <label for="email">Email:</label>
+                <input type="text" id="email-box" name="email">
+                <input type="submit" id="submit-button" value="Submit">
+            </form>
+        </div>
+
+    </div>
+
+    
+    <div id="door" class="hide">
+
+    </div>
 
 </body>
-</html>
+

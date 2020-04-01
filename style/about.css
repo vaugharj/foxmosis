@@ -1,78 +1,242 @@
-#about-info-container{
-    position: static;
-    margin: 5% .5% 1% 45%;
-    background-color: rgba(61, 61, 61, 0.7);
-    border: 3px solid rgba(27, 27, 27, 0.4);
-    border-radius: 30px;
-    width: 50%;
-    display: inline-block;
+#about{
+    position: relative;
+    background-image: linear-gradient(-160deg, rgba(50, 50, 200, .5), transparent, rgba(187, 202, 52, 0.5)), url('https://images.unsplash.com/photo-1520758594221-872948699332?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
+    background-size: cover;
+    width: 100%;
+    height: calc(100% - 30px);
+    min-width: 500px;
+    min-height: 650px;
 }
 
-#about-info-container > h1{
+#about-extend{
+    min-height: 100vh;
+}
+
+#about-content-container{
+    display: flex;
+    height: 85%;
+    width: 90%;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+#about-portrait{
+    width: 100%;
+    height: 90%;
+    
+}
+
+#about-portrait-img{
+    position: absolute;
+    z-index: 0;
+    width: 60% 75%;
+    min-width: 500px;
+    max-width: 620px;
+    bottom: 0;
+    left: 0;
+    filter: drop-shadow(0px 14px 4px #000000);
+    /* background-image: url('../images/LUKAS1.png');
+    background-size: contain;
+    background-position: bottom left;
+    background-repeat: no-repeat; */
+}
+
+#about-info{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(50, 50, 50, .7);
+    width: 120%;
+    /* height: 100%; */
+    align-self: center;
+    z-index: 1;
+    border: 1px solid rgba(255, 255, 255, .5);
+    border-radius: 50px;
+    margin-top: 30px;
+}
+
+#about-info-header{
+    color: white;
     text-align: center;
     margin-top: 5px;
+    font-size: 3em;
+}
+
+#about-info-text{
     color: white;
+    margin: 5px 5px 40px 10px;
 }
 
-#about-info-container > p{
-    color: white;
-    margin: 10px 1% 0 2%;
-    /* font-size: 1.3vw; */
+#about-info-text > p{
+    margin: 10px 0 0 0;
 }
 
-#menu-about-btn{
-    position: absolute;
-    top: 8%;
-    left: 12%;
-    width: 20vw;
-    height: 6vw;
-    background-size: 20vw 10vw;
-    font-family: 'Courier New', Courier, monospace;
-    color: white;
-    font-size: 7vw;
-    cursor: pointer;
-    text-shadow: 1px 1px 5px rgb(0, 0, 0), 1px 1px 5px black, 1px 1px 5px black, -1px -1px 3px rgb(255, 0, 0), -1px -1px 3px rgb(255, 0, 0), -1px -1px 3px rgb(255, 0, 0), -1px -1px 3px rgb(255, 0, 0);
-}
-
-#menu-about-btn:hover{
-    color: rgba(200, 200, 200, 1);
-}
-
-#about-contact-bar{
+#about-info-contact{
+    position: relative;
+    right: 70px;
+    width: 100px;
+    align-self: center;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 220px;
-    margin: 10px auto;
+    color: white;
+    margin: 0px 5px 10px 10px;
 }
 
-#about-contact-bar > a:nth-of-type(1){
-    margin-right: 6%;
+#about-info-contact > p {
+    color: white;
+    font-family: monospace;
+    font-size: 2em;
+    margin-right: 30px;
+    line-height: 30px;
+}
+
+#about-info-contact > a {
+    margin-right: 30px;
+}
+
+#about-info-contact > a {
+    width: 15px;
+}
+
+#about-info-contact > a:nth-of-type(1){
     color: cornflowerblue;
     cursor: pointer;
 }
 
-#about-contact-bar > a:nth-of-type(2){
-    margin-right: 6%;
+#about-info-contact > a:nth-of-type(2){
     color: violet;
     cursor: pointer;
 }
 
-#about-contact-bar > a:nth-of-type(3){
-    margin-right: 6%;
+#about-info-contact > a:nth-of-type(3){
     color: royalblue;
     cursor: pointer;
 }
 
 
+@media only screen and (max-width: 900px) {
+    #about-portrait-img{
+        left: -120px;
+        width: 90%;
+    }
+    #about-info{
+        width: 100%;
+    }
 
-#about-contact-bar > p{
-    font-size: 24px;
-    margin-right: 10%;
+    #about-portrait{
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #about{
+        /* position: relative;
+        background-image: linear-gradient(-160deg, rgba(50, 50, 200, .5), transparent, rgba(187, 202, 52, 0.5)), url('https://images.unsplash.com/photo-1520758594221-872948699332?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
+        background-size: cover;
+        width: 100%;
+        height: 100%; */
+        /* min-width: 400px;
+        min-height: 800px; */
+        /* overflow-x: hidden; */
+        padding-bottom: 20px;
+        min-width: 400px;
+        min-height: unset;
+        height: 100%;
+    }
+    
+    #about-content-container{
+        display: flex;
+        justify-content: space-evenly;
+        width: 90%;
+        margin: 30px auto 0 auto;
+        border-radius: 10px;
+    }
+    
+    
+    #about-portrait{
+        display: none;
+    }
+    
+    #about-portrait-img{
+        display: none;
+    }
+    
+    #about-info{
+        margin-top: 0px;
+        display: inline-flex;
+        font-size: 1em;
+        flex-direction: column;
+        background-color: rgba(50, 50, 50, .7);
+        width: 120%;
+        /* height: 90%; */
+        align-self: flex-start;
+        z-index: 1;
+        border: 1px solid rgba(255, 255, 255, .5);
+        border-radius: 50px;
+    }
+    
+    #about-info-header{
+        color: white;
+        text-align: center;
+        margin-top: 5px;
+        font-size: 2em
+    }
+    
+    #about-info-text{
+        color: white;
+        margin: 5px 5px 10px 10px;
+    }
+    
+    #about-info-text > p{
+        margin: 6px 0 0 0;
+    }
+    
+    #about-info-contact{
+        position: relative;
+        right: 90px;
+        width: 100px;
+        align-self: center;
+        display: flex;
+        color: white;
+        margin: 0px 5px 10px 5px;
+        font-family: monospace;
+    }
+    
+    #about-info-contact > p {
+        font-family: monospace;
+        color: white;
+        font-size: 2em;
+        margin-right: 15px;
+        line-height: 30px;
+    }
+    
+    #about-info-contact > a {
+        margin-right: 35px;
+    }
+    
+    #about-info-contact > a {
+        width: 15px;
+    }
+    
+    #about-info-contact > a:nth-of-type(1){
+        color: cornflowerblue;
+        cursor: pointer;
+    }
+    
+    #about-info-contact > a:nth-of-type(2){
+        color: violet;
+        cursor: pointer;
+    }
+    
+    #about-info-contact > a:nth-of-type(3){
+        color: royalblue;
+        cursor: pointer;
+    }
+}
+
+#about-info-email{
     color: white;
-    cursor: default;
+    text-align: center;
+    padding-bottom: 20px;
+    font-family: monospace;
+    font-size: 1.6em;
 }
 
-#about-contact-bar > div{ 
- 
-}

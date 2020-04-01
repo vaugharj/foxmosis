@@ -1,94 +1,174 @@
-#lukas-logo{
-    top: 40%;
-    right: 1.5%;
-    position: absolute;
-    width: 30vw;
-    min-width: 200px;
-    height: 15vw;
-    min-height: 100px;
-    background-image: url('../images/lukas.png');
+#home{
+    height: 100%;
+    position: relative;
+    min-height: 645px;
+    min-width: 800px;
+    background-color: black;
+    background-image: url('https://images.unsplash.com/photo-1533109721025-d1ae7ee7c1e1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
     background-size: cover;
-    background-repeat: no-repeat;
+    overflow-x: auto;
+    /* min-height: 550px; */
+}
+
+#home-fill{
+    min-height: 100vh;
+}
+
+#home-container{
+    box-sizing: content-box;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+    width: 70%;
+    height: 70%;
+    /* padding-bottom: 25%; */
+    padding-top: 5%;
+    margin: 0 auto 0 auto;
+
+}
+
+.home-box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    width: 30%;
+    padding-bottom: calc(30% + 50px);
+    height: 0;
+    
+    /* background-color: white; */
+}
+
+.home-box:hover > .home-box-image, .home-box:active > .home-box-image{
+    box-shadow: 0px 0px 10px 2px #ffffff;
+    cursor: pointer;
+}
+
+.home-box:hover > .home-box-description, .home-box:active > .home-box-description{
+    color: red;
+    text-shadow: 1px 1px 3px black, 1px 1px 3px black, 1px 1px 3px black;
+}
+
+.home-box-portrait{
+    position: absolute;
+    width: 100%;
+    padding-bottom: 100%;
+    background: url('../images/LUKAS1.png');
+    background-size: contain;
+    
+}
+
+.home-box-image{
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 10px 1px #000000;
+}
+
+.home-box-description{
+    cursor: pointer;
+    color: white;
+    text-align: center;
+    font-size: 3em;
+    white-space: nowrap;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 1px 1px 3px black, 1px 1px 3px black, 1px 1px 3px black;
+}
+
+.home-box:nth-of-type(1) > .home-box-image{
+    background-image: linear-gradient(-160deg, rgba(50, 50, 200, .5), transparent, rgba(187, 202, 52, 0.5)), url('https://images.unsplash.com/photo-1520758594221-872948699332?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
+    width: 100%;
+    padding-bottom: 100%;
+}
+
+.home-box:nth-of-type(2) > .home-box-image{
+    background-image: url('../images/SINIS.png');
+    width: 100%;
+    padding-bottom: 100%;
+    background-size: cover;
+}
+
+.home-box:nth-of-type(3) > .home-box-image{
+    background-image: url('https://images.unsplash.com/photo-1571916234808-adf437ac1644?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1075&q=80');
+    width: 100%;
+    padding-bottom: 100%;
+    background-size: cover;
     background-position: center;
 }
 
-#lukas-logo:hover{
-    background-image: url('../images/foxmosis.png');
-    width: 38vw;
-    height: 17vw;
-    background-size: 34vw 17vw;
-    top: 39%;
-    right: -1%;
-}
-
-/* .home-background{
-    z-index: -1;
+#home-portrait{
     position: absolute;
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    background-image: url('https://www.inmatrix.com/skins/background/Default_Nav[1920x1080].png');
-    background-size: 100% 100%;
-    background-attachment: fixed;
-    min-height:
-} */
-
-#gallery-menu-btn{
-    position: absolute;
-    top: 8%;
-    left: 1%;
-    width: 20vw;
-    height: 6vw;
-    background-size: 20vw 10vw;
-    font-family: 'Courier New', Courier, monospace;
-    color: white;
-    font-size: 7vw;
-    cursor: pointer;
-    text-shadow: 1px 1px 5px black;
+    box-sizing: border-box;
+    width: 370px;
+    left: 35%;
+    bottom: 0%;
+    filter: drop-shadow(1px 1px 3px black) drop-shadow(1px 1px 3px black) drop-shadow(1px 1px 3px black);
+    padding-bottom: 10px;
 }
 
-#gallery-menu-btn:hover{
-    color: rgba(200, 200, 200, 1);
+#home-portrait-phone{
+    display: none;
+    box-sizing: border-box;
+    width: 370px;
+    left: 35%;
+    bottom: 0%;
+    filter: drop-shadow(1px 1px 3px black) drop-shadow(1px 1px 3px black) drop-shadow(1px 1px 3px black);
+    padding-bottom: 10px;
 }
 
-#about-menu-btn{
-    position: absolute;
-    bottom: 30%;
-    left: 1%;
-    width: 25vw;
-    height: 0vw;
-    background-size: 20vw 10vw;
-    font-family: 'Courier New', Courier, monospace;
-    color: white;
-    font-size: 7vw;
-    cursor: pointer;
-    white-space: nowrap;
-    margin-bottom: 0;
-    transform: translateY(30px);
-    text-shadow: 1px 1px 5px black;
+@media only screen and (max-width: 1200px){
+    
+    #home-container{
+        width: 90%;
+        padding-top: 7.5%;
+    }
+    #home-portrait{
+        left: 32%;
+    }
 }
 
-#about-menu-btn:hover{
-    color: rgba(200, 200, 200, 1);
+@media only screen and (max-width: 840px){
+    #home{
+        min-height: 600px;
+    }
+
+    #home-container{
+        width: 90%;
+        padding-top: 10%;
+    }
+
+    .home-box-description{
+        font-size: 2em;
+    }
+
+    #home-portrait{
+        min-width: unset;
+        width: 40%;
+        left: 30%;
+    }
 }
 
-#blog-menu-btn{
-    position: absolute;
-    top: 38%;
-    left: 1%;
-    width: 25vw;
-    height: 6vw;
-    background-size: 20vw 10vw;
-    font-family: 'Courier New', Courier, monospace;
-    color: white;
-    font-size: 7vw;
-    cursor: pointer;
-    white-space: nowrap;
-    margin-bottom: 0;
-    transform: translateY(30px);
-    text-shadow: 1px 1px 5px black;
-}
+@media only screen and (max-width: 700px){
+    #home{
+        min-width: 400px;
+    }
 
-#blog-menu-btn:hover{
-    color: rgba(200, 200, 200, 1);
+    #home-container{
+        flex-direction: column;
+        padding-top: 10px;
+        width: 500px;
+    }
+
+    #home-box{
+        margin-bottom: 50px;
+        width: 100px;
+    }
+
+    #home-portrait{
+        display: none;
+    }
+    #home-portrait-phone{
+        display: block;
+    }
 }
