@@ -89,6 +89,7 @@
 
 @media only screen and (max-width: 900px){
   #door{
-    background-position-x: -20vh;
+    background-size: 140vw 140vh;
+    background-position-x: 4vw;
   }
 }

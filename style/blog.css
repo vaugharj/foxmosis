@@ -123,6 +123,10 @@
     margin-top: 10px;
 }
 
+#blog-list > p:before{
+    content: "\25b6  ";
+}
+
 .blog-post-preview-link{
     text-align: center;
     text-decoration: underline;

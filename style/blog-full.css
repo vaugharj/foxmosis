@@ -95,11 +95,7 @@
     margin-top: 20px;
 }
 
-form{
-    color: white;
-    width: 50%;
-    margin: 20px 35% 0 15%;
-}
+
 
 #comment-box{
     width: 100%;
@@ -123,4 +119,17 @@ label{
     color: white;
     font-size: 2em;
     margin-bottom: 15px;
+}
+
+form{
+        color: white;
+        width: 90%;
+        margin: 20px auto 0 auto;
+}
+
+@media only screen and (max-width: 900px){
+    #blog-full-return{
+        width: 40px;
+        padding: 20px 0px;
+    }
 }

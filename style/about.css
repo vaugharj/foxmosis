@@ -240,3 +240,16 @@
     font-size: 1.6em;
 }
 
+@media only screen and (max-width: 390px){
+    #about-info-email{
+        font-size: 1.2em;
+    }
+    #about-info-contact > p{
+        font-size: 1.5em;
+        
+    }
+    #about-info-contact{
+        padding-left: 10%;
+    }
+}
+
