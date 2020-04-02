@@ -136,12 +136,6 @@
     margin-top: 10px;
 }
 
-#blog-list > p:before{
-    content: "\25b6   ";
-    font-size: .8em;
-    
-}
-
 .blog-post-preview-link{
     text-align: center;
     text-decoration: underline;
@@ -155,11 +149,14 @@
 #blog-list{
     margin-top: 10px;
     color: white;
-    list-style: none;
+    /* list-style: none; */
 }
 
 #blog-list > p{
-    margin: 6px 10px 0px 10px;
+    display: list-item;
+    list-style-type: disc;
+    list-style-position: outside;
+    margin: 6px 10px 0px 25px;
     cursor: pointer;
     text-align: left;
     font-family: Lucida, sans-serif;
