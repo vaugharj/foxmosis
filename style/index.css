@@ -30,7 +30,6 @@ body{
     height: 50px;
     margin: 0 2.5% 2% 2.5%;
     color: white;
-    line-height: -8px;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
     border: 1px solid rgba(255, 255, 255, .5);
@@ -42,7 +41,6 @@ body{
 .nav-logo{
     position: relative;
     width: 45%;
-    word-wrap: nowrap;
     justify-self: flex-start;
     margin-left: 5%;
     line-height: 45px;

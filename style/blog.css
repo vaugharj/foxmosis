@@ -124,7 +124,9 @@
 }
 
 #blog-list > p:before{
-    content: "\25b6  ";
+    content: "\25b6   ";
+    font-size: .8em;
+    
 }
 
 .blog-post-preview-link{
@@ -160,16 +162,16 @@
     margin-bottom: 15px;
 }
 
-#blog-list > .blog-full-btn::after{
+/* #blog-list > .blog-full-btn::after{
     content: "";
     position: absolute;
     top: calc(100% + 7px);
     height: 1px;
-    width: 40%;
-    left: 0px;
+    width: 90%;
+    left: 5%;
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 10px;
-}
+} */
 
 #blog-list > .blog-full-btn:last-of-type:after{
     height: 0px;
