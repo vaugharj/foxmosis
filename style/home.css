@@ -83,7 +83,7 @@
 }
 
 .home-box:nth-of-type(2) > .home-box-image{
-    background-image: url('../images/SINIS.png');
+    background-image: url('../images/sinis.png');
     width: 100%;
     padding-bottom: 100%;
     background-size: cover;
