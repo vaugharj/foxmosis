@@ -11,7 +11,7 @@
     min-width: 320px;
 }
 
-#gallery::after{
+#gallery-bg{
     z-index: -1;
     content: "";
     position: fixed;
