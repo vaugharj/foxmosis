@@ -146,4 +146,8 @@ form{
         width: 40px;
         padding: 20px 0px;
     }
+
+    #blog-full-title{
+        font-size: 1.3em;
+    }
 }
