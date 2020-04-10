@@ -19,6 +19,7 @@ const sceneAnimationTime = 1000;
 let currentScene = home;
 let transitioning = false;
 
+//function that returns a function that will switch the display to the scene passed in as a parameter
 let transitionFactory = (newScene) => {
     return function(){
         if(!transitioning && !displayShowing){     //display showing variable must be added for gallery
@@ -28,6 +29,7 @@ let transitionFactory = (newScene) => {
             door.classList.remove('hide');
             door.classList.add('transition-down');
             setTimeout( () =>{
+                window.scrollTo(0, 0);
                 currentScene.classList.add('hide');
                 newScene.classList.remove('hide');
                 door.classList.remove('transition-down');
@@ -51,6 +53,8 @@ let transitionFactory = (newScene) => {
     }
 }
 
+
+//add event listeners to all scene switching buttons
 for(var i = 0; i < homeBtns.length; i++){
     homeBtns[i].addEventListener('click', transitionFactory(home));
 }

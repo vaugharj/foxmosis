@@ -2,12 +2,15 @@ const dropButton = document.getElementsByClassName('nav-dropdown');
 const dropContent = document.getElementsByClassName('nav-dropdown-content');
 const nav = document.getElementsByClassName('nav');
 
+//dropdown functionality
 const dropdownToggle = (i) => {
     return (e) => {
-        dropButton[i].classList.toggle('active');
-        dropContent[i].classList.toggle('open');
-        nav[i].classList.toggle('active');
-        e.stopPropagation();
+        if(!displayShowing){
+            dropButton[i].classList.toggle('active');
+            dropContent[i].classList.toggle('open');
+            nav[i].classList.toggle('active');
+            e.stopPropagation();
+        }
     }
 }
 for(var i = 0; i < dropButton.length; i++){

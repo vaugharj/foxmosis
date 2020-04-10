@@ -1,10 +1,11 @@
 const portraitImg = document.getElementById('about-portrait-img')
-const maxHeight = 640;
+const maxHeight = 650;
 
+//prevent self portrait from covering the navbar more than a few pixels
 let portraitFix = function() {
     viewportHeight = window.innerHeight;
-    if(viewportHeight < 640){
-        const bottomShift = 640 - viewportHeight;
+    if(viewportHeight < maxHeight){
+        const bottomShift = maxHeight - viewportHeight;
         portraitImg.setAttribute('style', `bottom: -${bottomShift}px`);
         console.log(bottomShift);
     }

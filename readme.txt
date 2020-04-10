@@ -1,0 +1,2 @@
+This is a site I made for my friend Lukas Curtis to display his art and share his thoughts.
+All images presented were either made my Lukas Curtis himself, or borrowed from unsplash.com, a site that provides freely usable images to power creators everywhere.

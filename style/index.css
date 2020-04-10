@@ -25,6 +25,7 @@ body{
 
 .nav{
     display: flex;
+    justify-content: space-between;
     background-color: rgba(50, 50, 50, .7);
     width: 95%;
     height: 50px;
@@ -40,13 +41,16 @@ body{
 
 .nav-logo{
     position: relative;
-    width: 45%;
+    /* width: 45%; */
     justify-self: flex-start;
     margin-left: 5%;
     line-height: 45px;
     font-size: 2em;
     font-family: 'Courier New', Courier, monospace;
-    cursor: default;
+    cursor: pointer;
+}
+.nav-logo:hover{
+    color: gray;
 }
 
 .nav-logo::after{
@@ -79,6 +83,7 @@ body{
     border-bottom-left-radius: 30px;
     border-top-left-radius: 30px;
     box-sizing: border-box;
+    z-index: 1;
 }
 
 .nav-btn:hover, .nav-btn:active{
@@ -111,7 +116,6 @@ body{
 
 .nav-dropdown:hover, .nav-dropdown:active{
     background-color: #000000;
-
 }
 
 .nav-dropdown-content{
@@ -144,6 +148,7 @@ body{
     border: 1px solid rgba(255, 255, 255, .5);
     border-radius: 5px;
     background-color: rgba(10, 10, 10, .9);
+    z-index: 1;
 }
 
 .nav-dropdown-btn:hover, .nav-dropdown-btn:active{
@@ -226,3 +231,7 @@ body{
     }
 }
 
+.logo-deactivate:hover{
+    color: white;
+    background-color: inherit;
+}

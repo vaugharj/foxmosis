@@ -4,6 +4,7 @@ const fullBlogTitle = document.getElementById('blog-full-title');
 const fullBlogDate = document.getElementById('blog-full-date');
 
 
+//fill page with information of blog post that was clicked
 const populateBlogPost = (title) => {
   return function(){
     fetchBlogPost(title)
@@ -16,7 +17,7 @@ const populateBlogPost = (title) => {
   }
 };
 
-
+//retrieve blog information from JSON file
 const fetchBlogPost = async function(title){
   return fetch('../json/blog.json')
   .then((response) => {
@@ -40,6 +41,7 @@ const fetchBlogPost = async function(title){
 //   currentBlog = res;
 // });
 
+//add event listeners
 const blogList = document.querySelectorAll('#blog-list > p');
 const blogPreviewList = document.getElementsByClassName('blog-post-preview');
 for(var i = 0; i < blogList.length; i++){
@@ -52,6 +54,7 @@ for(var i = 0; i < blogPreviewList.length; i++){
   let seeMore = blogPreviewList[i].children[blogPreviewList[i].children.length - 1];
   let blogPreviewTitle = blogPreviewList[i].children[0].innerHTML;
   console.log(blogPreviewTitle);
+  blogPreviewList[i].addEventListener('click', populateBlogPost(blogPreviewTitle));
   seeMore.addEventListener('click', populateBlogPost(blogPreviewTitle));
 }
 

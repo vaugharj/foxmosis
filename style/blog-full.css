@@ -7,6 +7,7 @@
     min-height: 100vh;
     padding-bottom: 25px;
     box-sizing: border-box;
+    min-width: 420px;
     /* background-image: linear-gradient(-160deg, rgba(50, 50, 200, .5), transparent, rgba(187, 202, 52, 0.5)), url('https://images.unsplash.com/photo-1520758594221-872948699332?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80'); */
 
 }

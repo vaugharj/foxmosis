@@ -2,16 +2,15 @@
 <head>
     <link type="text/css" rel="stylesheet" href="./style/index.css">
     <link type="text/css" rel="stylesheet" href="./style/home.css">
-    <link type="text/css" rel="stylesheet" href="./style/gallery.css">
     <link type="text/css" rel="stylesheet" href="./style/about.css">
     <link type="text/css" rel="stylesheet" href="./style/transition.css">
     <link type="text/css" rel="stylesheet" href="./style/blog.css">
     <link type="text/css" rel="stylesheet" href="./style/blog-full.css">
+    <link type="text/css" rel="stylesheet" href="./style/gallery.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
 
 
     <script defer src="./scripts/transition.js"></script>
@@ -28,7 +27,7 @@
     <div id="home" class="">
         <div id="home-fill">
         <div id="home-container">
-            <img id="home-portrait-phone" src="./images/foxmosis.png">
+            <img id="home-portrait-phone" src="./images/foxmosis.png" alt="Foxmosis">
             <div class="home-box about-btn">
                 <div class="home-box-image">
                     <div class="home-box-portrait"></div>
@@ -45,7 +44,7 @@
             </div>
             
         </div>
-        <img id="home-portrait" src="./images/foxmosis.png">
+        <img id="home-portrait" src="./images/foxmosis.png" alt="Foxmosis">
         </div>
     </div>
 
@@ -53,7 +52,7 @@
     <div id="gallery" class="hide">
         
         <div class="nav">
-            <div class="nav-logo">
+            <div class="nav-logo home-btn">
                 Lukas Curtis
             </div>
             <div class="nav-right">
@@ -83,28 +82,35 @@
         </div>
 
         <div id="gallery-slide">
-                <div class="img-container"><img class="gallery-img" src='./images/sinis.png'></div>
-                <div class="img-container"><img class="gallery-img" src='./images/smallbird.jpg'></div>
-                <div class="img-container"><img class="gallery-img" src='./images/damon.jpg'></div>
-                <div class="img-container"><img class="gallery-img" src='./images/gopd.png'></div>
-                <div class="img-container"><img class="gallery-img" src='./images/sinis.png'></div>
-                <div class="img-container"><img class="gallery-img" src='./images/sinis.png'></div>
-                <div class="img-container"><img class="gallery-img" src='./images/sinis.png'></div>
-                <div class="img-container"><img class="gallery-img" src='./images/sinis.png'></div>
-                <div class="img-container"><img class="gallery-img" src='./images/sinis.png'></div>
-                <div class="img-container"><img class="gallery-img" src='./images/sinis.png'></div>
-                <div class="img-container"><img class="gallery-img" src='./images/sinis.png'></div>
-                <div class="img-container"><img class="gallery-img" src='./images/sinis.png'></div>
-                <div class="img-container"><img class="gallery-img" src='./images/sinis.png'></div>
-                <div class="img-container"><img class="gallery-img" src='./images/sinis.png'></div>
-                <div class="img-container"><img class="gallery-img" src='./images/sinis.png'></div>
-                <div class="img-container"><img class="gallery-img" src='./images/sinis.png'></div>
+                <div class="img-container"><img class="gallery-img" src='./images/sinis.png' data-title="SINIS" alt="Sinis"></div>
+                <div class="img-container"><img class="gallery-img" src='./images/damon.jpg' data-title="DAMON" alt="DAMON"></div>
+                <div class="img-container"><img class="gallery-img" src='./images/pizza2.png' data-title="Pizza 2" alt="pizza 2"></div>
+                <div class="img-container"><img class="gallery-img" src='./images/gopd.png' data-title="gopd" alt="gopd"></div>
+                
+                <div class="img-container"><img class="gallery-img" src='./images/smallbird.jpg' data-title="Small Bird" alt="Small Bird"></div>
+                <div class="img-container"><img class="gallery-img" src='./images/cactanner.png' data-title="Cactanner" alt="cactanner"></div>
+                <div class="img-container"><img class="gallery-img" src='./images/heroblasters.png' data-title="Hero Blasters" alt="hero blasters"></div>
+                <div class="img-container"><img class="gallery-img" src='./images/sonic-mania.png' data-title="Sonic Mania" alt="sonic mania"></div>
+
+                <div class="img-container"><img class="gallery-img" src='./images/katiefighter.jpg' data-title="Katie Fighter" alt="katie fighter"></div>
+                <div class="img-container"><img class="gallery-img" src='./images/mega.png' data-title="MEGA" alt="mega"></div>
+                <div class="img-container"><img class="gallery-img" src='./images/newshit2.png' data-title="New Shit 2" alt="new shit 2"></div>
+                <div class="img-container"><img class="gallery-img" src='./images/postcard.png' data-title="Postcard" alt="postcard"></div>
+                <div class="img-container"><img class="gallery-img" src='./images/shalala7502.jpg' data-title="Shalala7502" alt="postcard"></div>
+                <div class="img-container"><img class="gallery-img" src='./images/skeip.png' data-title="Skeip" alt="skeip"></div>
+                <div class="img-container"><img class="gallery-img" src='./images/cover1.png' data-title="Cover 1" alt="cover 1"></div>
+                <div class="img-container"><img class="gallery-img" src='./images/cover2.png' data-title="Cover 2" alt="cover 2"></div>
+                <div class="img-container"><img class="gallery-img" src='./images/cover3.png' data-title="Cover 3" alt="cover 3"></div>
         </div>
     </div>
-    <div class="img-display hide">
-        <i id="display-close" class="fa fa-times fa-2x"></i>
-        <img id="display-img"></img>
-    </div>  
+    <div class = "img-display-container">
+        <div id="display-img-title" class="hide"></div>
+        <div class="img-display hide">
+            <i id="display-close" class="fa fa-times fa-2x"></i>
+            <img id="display-img" alt=""></img>
+        </div>  
+        
+    </div>
 
 
 
@@ -112,7 +118,7 @@
     <div id="about" class="hide">
         <div id="about-extend">
         <div class="nav">
-            <div class="nav-logo">
+            <div class="nav-logo home-btn">
                 Lukas Curtis
             </div>
             <div class="nav-right">
@@ -142,7 +148,7 @@
             </div>
         </div>
 
-        <img id="about-portrait-img" src="./images/itsame.png">
+        <img id="about-portrait-img" src="./images/itsame.png" alt="self portrait">
 
         <div id="about-content-container">
             <div id="about-portrait">
@@ -155,14 +161,14 @@
                     <p>Hello. My name is Lukas Curtis. I am an aspiring artist currently enrolled at the University of Wisconsin - Eau Claire. The rest of this box will be filled with placeholder text since the real Lukas Curtis hasn't gotten around to providing the real content that will eventually be placed here.</p>
                     <p>I mean, I don't know his life story. But I can try to write down everything I know about him. I have a beard. I normally am wearing glasses. Uhh what else... I currently work at Noodles n Company, though I sort of hate it. But I did meet a lot of awesome people there including Ryan Vaughan (oh yeah and my girlfriend).</p>
                     <p>As for my art, I have a particular fondess for character sketches and hope to work as part of the storyboarding process for either videogame design or animated show design. I'm pretty dang good at it too so if you're reading this you should hire me before it's too late.</p>
-                    <p>Be careful to believe anything I say because most of what comes out of my mouth is just bull!@#$ and part of some prank or long-con. I have a very unsettling slightly smaller than life-size mannequin of Santa Claus that I like to leave around the corner of unlit rooms in my apartment, and somehow you always forget about it and nearly have a heart attack.</p>
+                    <p>Be careful to believe anything I say because most of what comes out of my mouth is just bull!@#$ and part of some prank or long-con. I have a very unsettling slightly smaller than life-size mannequin of Santa Claus that I like to leave around the corner of unlit rooms in my apartment, and somehow you always forget about it and nearly have a heart attack when you enter the room.</p>
                     <p>Yeah I think those four paragraphs just about sum up every single detail about my life. So that's all folks. Be sure to subscribe and smash that like button (but no really check out my art and feel free to contact me via the links or the email below!)</p>
                 </div>
                 <div id ="about-info-contact">
                     <p>Contact:</p>
-                    <a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
+                    <a href="https://twitter.com/foxmosis" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
                     <a href="https://www.instagram.com/foxmosis/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
-                    <a href="https://www.facebook.com/buzzaldrin/" target="_blank"><i class="fa fa-facebook-official fa-2x"></i></a>
+                    <a href="https://www.youtube.com/channel/UCoqQJ2V-sP3EDWDF-O6Jw6Q" target="_blank"><i class="fa fa-youtube fa-2x"></i></a>
                 </div>
                 <div id="about-info-email">Email: foxmosis17@gmail.com</div>
             </div>
@@ -174,7 +180,7 @@
 
     <div id="blog" class="hide">
         <div class="nav">
-            <div class="nav-logo">
+            <div class="nav-logo home-btn">
                 Lukas Curtis
             </div>
             <div class="nav-right">
@@ -209,9 +215,9 @@
                     Recent Posts
                 </div>
                 <div class="blog-post-preview">
-                    <div class="blog-post-preview-title">This is the title, thank you</div>
+                    <div class="blog-post-preview-title blog-full-btn">My first blog post</div>
                     <div class="blog-post-preview-date">
-                        October 7, 1993
+                        March 21, 2020
                     </div>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et explicabo labore doloremque quis magni ipsum. Quia pariatur ullam officiis voluptatem, quo voluptate. Tempore odio eaque sunt quis illum. Consequatur, at.
                     Commodi blanditiis alias voluptas dolor numquam nulla impedit et nemo dignissimos unde hic voluptate quasi molestiae magnam molestias modi rerum est, mollitia ea aliquam voluptatem consectetur totam dolore accusamus? Similique!
@@ -223,9 +229,9 @@
                 </div>
 
                 <div class="blog-post-preview">
-                    <div class="blog-post-preview-title">This is a longer title to see if longer titles work. Here are a few more words. One more sentence.</div>
+                    <div class="blog-post-preview-title blog-full-btn">This is a longer title to see if longer titles work. Here are a few more words. One more sentence. Nice.</div>
                     <div class="blog-post-preview-date">
-                        October 7, 1993
+                        March 22, 2020
                     </div>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et explicabo labore doloremque quis magni ipsum. Quia pariatur ullam officiis voluptatem, quo voluptate. Tempore odio eaque sunt quis illum. Consequatur, at.
                     Commodi blanditiis alias voluptas dolor numquam nulla impedit et nemo dignissimos unde hic voluptate quasi molestiae magnam molestias modi rerum est, mollitia ea aliquam voluptatem consectetur totam dolore accusamus? Similique!
@@ -243,10 +249,10 @@
                     All Posts
                 </div>
                 <div id="blog-list">
-                    <p class="blog-full-btn">Title 1</p>
-                    <p class="blog-full-btn">Title 2 this is a longer title to see if longer titles work there we go more more more more more more more more more more more more more</p>
-                    <p class="blog-full-btn">Title 3</p>
-                    <p class="blog-full-btn">Title 4</p>
+                    <p class="blog-full-btn">My first blog post</p>
+                    <p class="blog-full-btn">This is a longer title to see if longer titles work. Here are a few more words. One more sentence. Nice.</p>
+                    <p class="blog-full-btn">Reading my horses their horoscopes</p>
+                    <p class="blog-full-btn">Title 5</p>
                     <p class="blog-full-btn">Title 5</p>
                     <p class="blog-full-btn">Title 6</p>
                     
@@ -257,7 +263,7 @@
 
     <div id="blog-full" class="hide">
         <div class="nav">
-            <div class="nav-logo">
+            <div class="nav-logo home-btn">
                 Lukas Curtis
             </div>
             <div class="nav-right">
