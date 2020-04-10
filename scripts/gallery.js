@@ -39,10 +39,11 @@ let showImage = function(img){
                 }
             }
             galleryLogo.classList.add('logo-deactivate');
-            dropdownBtn.classList.add('deactivate');
+            dropdownBtn.classList.add('dropdown-deactivate');
             for(let btn of galleryNavButtons){
                 btn.classList.add('deactivate');
             }
+            setTimeout(displayImgFix(), 0);
 
         }
     }
@@ -69,9 +70,28 @@ displayClose.addEventListener('click', function(){
             }
         }
         galleryLogo.classList.remove('logo-deactivate');
-        dropdownBtn.classList.remove('deactivate');
+        dropdownBtn.classList.remove('dropdown-deactivate');
         for(let btn of galleryNavButtons){
             btn.classList.remove('deactivate');
         }
     }, 250)});
+
+    const displayImgFix = function(){
+        if(currentScene === gallery){
+            const imgBottom = displayImage.getBoundingClientRect().bottom;
+            const windowWidth = window.innerWidth;
+            const windowHeight = window.innerHeight;
+            newWidth = displayImage.clientWidth - (imgBottom - windowHeight);
+            if(windowHeight > 400 && newWidth <= window.innerWidth - 60){
+                display.setAttribute('style', `width: ${newWidth - 30}px`);
+            }
+            else if(newWidth > window.innerWidth - 60 && window.innerWidth > 400){
+                display.setAttribute('style', `width: ${windowWidth - 60}px`)
+            }
+            
+        }
+        
+    }
+    displayImgFix();
+    window.addEventListener('resize', displayImgFix);
     

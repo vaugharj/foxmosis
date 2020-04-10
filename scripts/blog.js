@@ -45,7 +45,6 @@ const fetchBlogPost = async function(title){
 const blogList = document.querySelectorAll('#blog-list > p');
 const blogPreviewList = document.getElementsByClassName('blog-post-preview');
 for(var i = 0; i < blogList.length; i++){
-  console.log(blogList[i]);
   let blogTitle = blogList[i].innerHTML;
   blogList[i].addEventListener('click', populateBlogPost(blogTitle));
 }
@@ -53,7 +52,6 @@ for(var i = 0; i < blogList.length; i++){
 for(var i = 0; i < blogPreviewList.length; i++){
   let seeMore = blogPreviewList[i].children[blogPreviewList[i].children.length - 1];
   let blogPreviewTitle = blogPreviewList[i].children[0].innerHTML;
-  console.log(blogPreviewTitle);
   blogPreviewList[i].addEventListener('click', populateBlogPost(blogPreviewTitle));
   seeMore.addEventListener('click', populateBlogPost(blogPreviewTitle));
 }

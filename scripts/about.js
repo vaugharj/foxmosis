@@ -7,7 +7,6 @@ let portraitFix = function() {
     if(viewportHeight < maxHeight){
         const bottomShift = maxHeight - viewportHeight;
         portraitImg.setAttribute('style', `bottom: -${bottomShift}px`);
-        console.log(bottomShift);
     }
     else{
         portraitImg.setAttribute('style', 'bottom: 0');
