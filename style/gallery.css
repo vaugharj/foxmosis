@@ -1,9 +1,4 @@
 #gallery{
-    /* position: relative;
-    background-image: url('https://images.unsplash.com/photo-1558481795-7f0a7c906f5e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1073&q=80');
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat; */
     width: 100%;
     height: 100%;
     min-height: 100vh;
@@ -20,7 +15,6 @@
     top: 0;
     left: 0;
     background-image: url('https://images.unsplash.com/photo-1558481795-7f0a7c906f5e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1073&q=80');
-    /* background-attachment: fixed; */
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -99,11 +93,7 @@
 }
 
 #display-img-title{
-    /* width: 100%;
-    min-width: 200px;
-    height: 60px; */
     background-color: white;
-      /* border: 1px solid rgba(100, 100, 100, .5); */
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     background-color: rgba(0, 0, 0, .8);
@@ -122,12 +112,12 @@
     padding: 10px 30px;
 }
 
-  @keyframes display-show{
-      from {opacity: 0}
-      to {opacity: 1}
-  }
+@keyframes display-show{
+    from {opacity: 0}
+    to {opacity: 1}
+}
 
-  @keyframes display-hide{
+@keyframes display-hide{
     from {opacity: 1}
     to {opacity: 0}
 }
@@ -164,24 +154,22 @@
       width: 100px;
 }
 
-  .fa-times:hover, .fa-times:active{
-      color: white;
-  }
+.fa-times:hover, .fa-times:active{
+    color: white;
+}
 
-  #display-img{
-      position: relative;
-      /* margin: 2%; */
-      width: 100%;
-      min-width: 200px;
-      background-color: white;
-      /* border: 1px solid rgba(100, 100, 100, .5); */
-      border-radius: 50px;
-      background-color: rgba(0, 0, 0, .8);
-      border: 2px solid white;
-  }
+#display-img{
+    position: relative;
+    width: 100%;
+    min-width: 200px;
+    background-color: white;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, .8);
+    border: 2px solid white;
+}
 
 
-  @media only screen and (max-width: 900px) {
+@media only screen and (max-width: 900px) {
     #gallery-slide > .img-container{
         width: 45%;
     }
@@ -194,8 +182,8 @@
         border-radius: 25px;
     }
 }
-  @media only screen and (max-width: 600px) {
 
+@media only screen and (max-width: 600px) {
     .fa-times{
         position: absolute;
         top: 5px;
@@ -206,11 +194,12 @@
         transition: .2s color;
         z-index: 5;
         text-shadow: 0px 2px 5px black;
-  }
+    }
 
     #gallery-slide > .img-container{
         width: 45%;
     }
+
     .img-display-container{
         top: 7.5vh;
         width: 70vw;

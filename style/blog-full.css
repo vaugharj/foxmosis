@@ -1,15 +1,10 @@
 #blog-full{
-    /* background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat; */
     width: 100%;
     height: 100%;
     min-height: 100vh;
     padding-bottom: 25px;
     box-sizing: border-box;
     min-width: 420px;
-    /* background-image: linear-gradient(-160deg, rgba(50, 50, 200, .5), transparent, rgba(187, 202, 52, 0.5)), url('https://images.unsplash.com/photo-1520758594221-872948699332?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80'); */
-
 }
 
 #blog-full::after{
@@ -21,7 +16,6 @@
     top: 0;
     left: 0;
     background-image: linear-gradient(-70deg, rgba(50, 50, 200, .5), transparent, rgba(187, 202, 52, 0.24)), url('https://images.unsplash.com/photo-1520758594221-872948699332?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
-    /* background-attachment: fixed; */
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -57,19 +51,15 @@
     font-size: 1.5em;
 }
 
-
-
 #blog-full-return > a > i{
     color: white;
     text-align: center;
     font-size: 2em;
 }
 
-
 #blog-full-return:hover, #blog-full-return:active{
     background-color: rgba(0, 0, 0, .9)
 }
-
 
 #blog-full-title{
     color: white;
@@ -111,8 +101,6 @@
     text-align: justify;
     line-height: 1.5;
 }
-
-
 
 #comment-box{
     width: 100%;
