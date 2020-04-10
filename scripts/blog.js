@@ -27,19 +27,11 @@ const fetchBlogPost = async function(title){
       console.log(data);
       for(var i = 0; i < data.blogs.length; i++){
         if(data.blogs[i].title == title){
-          // console.log(data.blogs[i]);
           return data.blogs[i];
         }
       }
   });
 };
-
-
-// fetchBlogPost("Title 1")
-// .then(res => {
-//   console.log(res);
-//   currentBlog = res;
-// });
 
 //add event listeners
 const blogList = document.querySelectorAll('#blog-list > p');
@@ -55,5 +47,3 @@ for(var i = 0; i < blogPreviewList.length; i++){
   blogPreviewList[i].addEventListener('click', populateBlogPost(blogPreviewTitle));
   seeMore.addEventListener('click', populateBlogPost(blogPreviewTitle));
 }
-
-// blogList.addEventListener('click', populateBlogPost('Title 1'));

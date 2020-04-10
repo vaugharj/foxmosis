@@ -22,10 +22,8 @@ let transitioning = false;
 //function that returns a function that will switch the display to the scene passed in as a parameter
 let transitionFactory = (newScene) => {
     return function(){
-        if(!transitioning && !displayShowing){     //display showing variable must be added for gallery
+        if(!transitioning && !displayShowing){     //check if animation is already underway or if an image is being displayed in the gallery
             transitioning = true;
-            // html.setAttribute('overflow-y', 'hidden');
-            // body.setAttribute('overflow-x', 'hidden');
             door.classList.remove('hide');
             door.classList.add('transition-down');
             setTimeout( () =>{
@@ -34,15 +32,7 @@ let transitionFactory = (newScene) => {
                 newScene.classList.remove('hide');
                 door.classList.remove('transition-down');
                 door.classList.add('transition-up');
-                // html.setAttribute('style', 'overflow-y: auto');
-                // body.setAttribute('style', 'overflow-x: auto');
                 currentScene = newScene;
-                // if(newScene === gallery || newScene === blog || newScene === blogFull){
-                //     html.setAttribute('style', 'height: unset');
-                // }
-                // else{
-                //     html.setAttribute('style', 'height: 100%');
-                // }
                 setTimeout( () => {
                     transitioning = false;
                     door.classList.remove('transition-up');
