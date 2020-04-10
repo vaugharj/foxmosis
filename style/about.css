@@ -16,8 +16,9 @@
     display: flex;
     height: 85%;
     width: 90%;
-    margin: 10px auto;
+    margin: 10px auto 0px auto;
     border-radius: 10px;
+    padding-bottom: 15px;
 }
 
 #about-portrait{
@@ -27,12 +28,12 @@
 }
 
 #about-portrait-img{
-    position: absolute;
+    position: fixed;
     z-index: 0;
     width: 100%;
     min-width: 900px;
     max-width: 900px;
-    bottom: 0;
+    /* bottom: 0; */
     left: 0;
     filter: drop-shadow(0px 14px 4px #000000);
     /* background-image: url('../images/LUKAS1.png');
@@ -44,8 +45,8 @@
 #about-info{
     display: flex;
     flex-direction: column;
-    background-color: rgba(50, 50, 50, .7);
-    width: 120%;
+    background-color: rgba(50, 50, 50, .85);
+    width: 140%;
     /* height: 100%; */
     align-self: center;
     z-index: 1;
@@ -59,15 +60,20 @@
     text-align: center;
     margin-top: 5px;
     font-size: 3em;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 #about-info-text{
     color: white;
+    font-size: 1.2em;
+    font-family: 'Oxygen', sans-serif;
     margin: 5px 5px 40px 10px;
 }
 
 #about-info-text > p{
     margin: 10px 0 0 0;
+    padding: 0 10px 0 10px;
+    text-align: justify;
 }
 
 #about-info-contact{
@@ -164,7 +170,7 @@
         display: inline-flex;
         font-size: 1em;
         flex-direction: column;
-        background-color: rgba(50, 50, 50, .7);
+        background-color: rgba(50, 50, 50, .85);
         width: 120%;
         /* height: 90%; */
         align-self: flex-start;

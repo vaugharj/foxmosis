@@ -1,14 +1,17 @@
-// let scrollFix = function() {
-//     viewportWidth = window.innerWidth;
-//     if(currentScene === about && ((window.innerWidth < 800 && window.innerWidth > 450) || window.innerWidth < 400)){
-//         // html.setAttribute('style', 'overflow-x: scroll');
-//         body.setAttribute('style', 'overflow-x: scroll');
-//     }
-//     else{
-//         // html.setAttribute('style', 'overflow-x: hidden');
-//         body.setAttribute('style', 'overflow-x: hidden');
-//     }
-// }
+const portraitImg = document.getElementById('about-portrait-img')
+const maxHeight = 640;
 
-// scrollFix();
-// window.addEventListener('resize', scrollFix);
+let portraitFix = function() {
+    viewportHeight = window.innerHeight;
+    if(viewportHeight < 640){
+        const bottomShift = 640 - viewportHeight;
+        portraitImg.setAttribute('style', `bottom: -${bottomShift}px`);
+        console.log(bottomShift);
+    }
+    else{
+        portraitImg.setAttribute('style', 'bottom: 0');
+    }
+}
+
+portraitFix();
+window.addEventListener('resize', portraitFix);
